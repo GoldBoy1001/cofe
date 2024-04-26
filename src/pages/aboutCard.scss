@@ -1,0 +1,92 @@
+.card-about {
+  display: grid;
+  grid-template: auto / 1fr minmax(auto, 840px) 1fr;
+  padding: 70px 20px 30px 20px;
+  @media (max-width: 768px) {
+    padding: 40px 20px 30px 20px;
+  }
+  @media (max-width: 768px) {
+    padding: 20px 20px 20px 20px;
+  }
+}
+.about-card {
+  grid-column: 2/3;
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  column-gap: 20px;
+  @media (max-width: 640px) {
+    grid-template: auto / 1fr;
+  }
+  // .about-card__img
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    @media (max-width: 640px) {
+      grid-row: 2/3;
+    }
+  }
+
+  // .about-card__about
+
+  &__about {
+    padding: 40px 0px;
+    display: grid;
+    font-size: 14px;
+    @media (max-width: 640px) {
+      padding: 0px;
+    }
+  }
+
+  // .about-card__about-title
+
+  &__about-title {
+    font-size: 24px;
+    line-height: 35px;
+    justify-self: center;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .about-card__about-img
+
+  &__about-img {
+    justify-self: center;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .about-card__about-country
+  &__about-country,
+  &__about-description {
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__about-price,
+  &__about-description,
+  &__about-country {
+    span {
+      font-weight: 700;
+    }
+  }
+
+  // .about-card__about-description
+
+  &__about-description {
+  }
+
+  // .about-card__about-price
+
+  &__about-price {
+    font-size: 20px;
+    font-weight: 400;
+
+    span {
+      font-size: 14px;
+      margin-right: 5px;
+    }
+  }
+}
