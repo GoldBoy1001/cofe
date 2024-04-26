@@ -1,4 +1,3 @@
-import Nav from "./Nav";
 import "./footer.scss";
 import logoAfter from "../img/Beans logo.svg";
 import logo from "../img/logo-footer.svg";
